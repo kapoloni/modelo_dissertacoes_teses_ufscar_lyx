@@ -1,0 +1,3740 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass ufscar
+\use_default_options false
+\maintain_unincluded_children false
+\language brazilian
+\language_package none
+\inputencoding utf8
+\fontencoding default
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures false
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing double
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 0
+\use_package cancel 0
+\use_package esint 1
+\use_package mathdots 0
+\use_package mathtools 0
+\use_package mhchem 0
+\use_package stackrel 0
+\use_package stmaryrd 0
+\use_package undertilde 0
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 3cm
+\topmargin 3cm
+\rightmargin 3cm
+\bottommargin 3cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Chapter
+\begin_inset CommandInset label
+LatexCommand label
+name "chap:cap_exemplos"
+
+\end_inset
+
+Resultados de comandos
+\end_layout
+
+\begin_layout Resumo capitulo sumario
+Isto é uma sinopse de capítulo.
+ A ABNT não traz nenhuma normatização a respeito desse tipo de resumo, que
+ é mais comum em romances e livros técnicos.
+ Esse resumo aparece no sumário.
+\end_layout
+
+\begin_layout Section
+Codificação dos arquivos: UTF8
+\end_layout
+
+\begin_layout Standard
+A codificação de todos os arquivos do 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+abnTeX
+\end_layout
+
+\end_inset
+
+ é 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+texttt{UTF8}
+\end_layout
+
+\end_inset
+
+.
+ É necessário que você utilize a mesma codificação nos documentos que escrever,
+ inclusive nos arquivos de base bibliográficas |.bib|.
+\end_layout
+
+\begin_layout Section
+Citações diretas
+\begin_inset CommandInset label
+LatexCommand label
+name "sec-citacao"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Utilize o ambiente 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+texttt{citacao}
+\end_layout
+
+\end_inset
+
+ para incluir citações diretas com mais de três linhas:
+\end_layout
+
+\begin_layout Citacao direta
+As citações diretas, no texto, com mais de três linhas, devem ser destacadas
+ com recuo de 4 cm da margem esquerda, com letra menor que a do texto utilizado
+ e sem as aspas.
+ No caso de documentos datilografados, deve-se observar apenas o recuo 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "NBR10520:2002"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Use o ambiente assim:
+\end_layout
+
+\begin_layout Verbatim
+
+
+\backslash
+begin{citacao}
+\end_layout
+
+\begin_layout Verbatim
+
+As citações diretas, no texto, com mais de três linhas [...] deve-se observar
+\end_layout
+
+\begin_layout Verbatim
+
+apenas o recuo 
+\backslash
+cite[5.3]{NBR10520:2002}.
+\end_layout
+
+\begin_layout Verbatim
+
+
+\backslash
+end{citacao}
+\end_layout
+
+\begin_layout Standard
+O ambiente 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+texttt{citacao}
+\end_layout
+
+\end_inset
+
+ pode receber como parâmetro opcional um nome de idioma previamente carregado
+ nas opções da classe (seção 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec-hifenizacao"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
+ Nesse caso, o texto da citação é automaticamente escrito em itálico e a
+ hifenização é ajustada para o idioma selecionado na opção do ambiente.
+ Por exemplo:
+\end_layout
+
+\begin_layout Verbatim
+
+% 
+\backslash
+begin{citacao}[english] 
+\end_layout
+
+\begin_layout Verbatim
+
+% Text in English language in italic with correct hyphenation.
+ 
+\end_layout
+
+\begin_layout Verbatim
+
+%
+\backslash
+end{citacao}
+\end_layout
+
+\begin_layout Standard
+Tem como resultado:
+\end_layout
+
+\begin_layout Standard
+Citações simples, com até três linhas, devem ser incluídas com aspas.
+ Observe que em 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+LaTeX
+\end_layout
+
+\end_inset
+
+ as aspas iniciais são diferentes das finais: 
+\begin_inset Quotes eld
+\end_inset
+
+Amor é fogo que arde sem se ver
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+Notas de rodapé
+\end_layout
+
+\begin_layout Standard
+As notas de rodapé são detalhadas pela NBR 14724:2011 na seção 5.2.1
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+As notas devem ser digitadas ou datilografadas dentro das margens, ficando
+ separadas do texto por um espaço simples de entre as linhas e por filete
+ de 5 cm, a partir da margem esquerda.
+ Devem ser alinhadas, a partir da segunda linha da mesma nota, abaixo da
+ primeira letra da primeira palavra, de forma a destacar o expoente, sem
+ espaço entre elas e com fonte menor 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+citeonline[5.2.1]{NBR14724:2011}
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Caso uma série de notas sejam criadas sequencialmente, o 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+abnTeX
+\end_layout
+
+\end_inset
+
+ instrui o 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+LaTeX
+\end_layout
+
+\end_inset
+
+ para que uma vírgula seja colocada após cada número do expoente que indica
+ a nota de rodapé no corpo do texto.
+\end_layout
+
+\end_inset
+
+
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Verifique se os números do expoente possuem uma vírgula para dividi-los
+ no corpo do texto.
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+Tabelas
+\end_layout
+
+\begin_layout Standard
+A Tabela 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab-nivinv"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ é um exemplo de tabela construída em 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+LaTeX
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement tbh
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+ABNTEXfontereduzida
+\end_layout
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Níveis de investigação.
+\begin_inset CommandInset label
+LatexCommand label
+name "tab-nivinv"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="4">
+<features tabularvalignment="middle">
+<column alignment="block" valignment="top" width="2.6cm">
+<column alignment="block" valignment="top" width="6cm">
+<column alignment="block" valignment="top" width="2.25cm">
+<column alignment="block" valignment="top" width="3.4cm">
+<row>
+<cell alignment="block" valignment="top" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Nível de Investigação
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="block" valignment="top" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Insumos
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="block" valignment="top" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Sistemas de Investigação
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="block" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Produtos
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="block" valignment="top" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Meta-nível
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="block" valignment="top" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Filosofia da Ciência
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="block" valignment="top" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Epistemologia
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="block" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Paradigma
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="block" valignment="top" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Nível do objeto
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="block" valignment="top" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Paradigmas do metanível e evidências do nível inferior
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="block" valignment="top" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Ciência
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="block" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Teorias e modelos
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="block" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Nível inferior
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="block" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Modelos e métodos do nível do objeto e problemas do nível inferior
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="block" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Prática
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="block" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Solução de problemas
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+legend{Fonte: 
+\backslash
+citeonline{van86}}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Já a Tabela 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tabela-ibge"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ apresenta uma tabela criada conforme o padrão do
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+ 
+\backslash
+citeonline{ibge1993}
+\end_layout
+
+\end_inset
+
+ requerido pelas normas da ABNT para documentos técnicos e acadêmicos.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement tbh
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+IBGEtab{
+\end_layout
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Um Exemplo de tabela alinhada que pode ser longa ou curta, conforme padrão
+ IBGE.
+\begin_inset CommandInset label
+LatexCommand label
+name "tabela-ibge"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+} %end IBGEtab
+\end_layout
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="3">
+<features booktabs="true" tabularvalignment="middle">
+<column alignment="block" valignment="top" width="0pt">
+<column alignment="block" valignment="top" width="0pt">
+<column alignment="block" valignment="top" width="0pt">
+<row>
+<cell alignment="block" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Nome
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="block" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Nascimento
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="block" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Documento
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="block" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Maria da Silva
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="block" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+11/11/1111
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="block" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+111.111.111-11
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="block" valignment="top" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+João Soluza
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="block" valignment="top" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+11/11/2111
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="block" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+211.111.111-11
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="block" valignment="top" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Laura Vicuña
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="block" valignment="top" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+05/04/1891
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="block" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+311.111.111-11
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}% end tabular
+\end_layout
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fonte{Produzido pelos autores.}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+nota{Esta é uma nota, que diz que os dados são baseados na   regressão linear.}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+nota{Uma anotação adicional, que pode ser seguida de várias   outras.}
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Figuras
+\end_layout
+
+\begin_layout Standard
+Figuras podem ser criadas diretamente em 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+LaTeX
+\end_layout
+
+\end_inset
+
+, como o exemplo da Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig_circulo"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement tbh
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+A delimitação do espaço.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig_circulo"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+setlength{
+\backslash
+unitlength}{5cm}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{picture}(1,1) 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+put(0,0){
+\backslash
+line(0,1){1}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+put(0,0){
+\backslash
+line(1,0){1}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+put(0,0){
+\backslash
+line(1,1){1}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+put(0,0){
+\backslash
+line(1,2){.5}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+put(0,0){
+\backslash
+line(1,3){.3333}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+put(0,0){
+\backslash
+line(1,4){.25}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+put(0,0){
+\backslash
+line(1,5){.2}} 		
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+put(0,0){
+\backslash
+line(1,6){.1667}} 		
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+put(0,0){
+\backslash
+line(2,1){1}} 		
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+put(0,0){
+\backslash
+line(2,3){.6667}} 		
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+put(0,0){
+\backslash
+line(2,5){.4}} 		
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+put(0,0){
+\backslash
+line(3,1){1}} 		
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+put(0,0){
+\backslash
+line(3,2){1}} 		
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+put(0,0){
+\backslash
+line(3,4){.75}} 		
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+put(0,0){
+\backslash
+line(3,5){.6}} 		
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+put(0,0){
+\backslash
+line(4,1){1}} 		
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+put(0,0){
+\backslash
+line(4,3){1}} 		
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+put(0,0){
+\backslash
+line(4,5){.8}} 		
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+put(0,0){
+\backslash
+line(5,1){1}} 		
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+put(0,0){
+\backslash
+line(5,2){1}} 		
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+put(0,0){
+\backslash
+line(5,3){1}} 		
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+put(0,0){
+\backslash
+line(5,4){1}} 		
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+put(0,0){
+\backslash
+line(5,6){.8333}} 		
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+put(0,0){
+\backslash
+line(6,1){1}} 		
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+put(0,0){
+\backslash
+line(6,5){1}} 		
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{picture}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+legend{Fonte: os autores}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Ou então figuras podem ser incorporadas de arquivos externos, como é o caso
+ da Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig_grafico"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Se a figura que for incluída se tratar de um diagrama, um gráfico ou uma
+ ilustração que você mesmo produza, priorize o uso de imagens vetoriais
+ no formato PDF.
+ Com isso, o tamanho do arquivo final do trabalho será menor, e as imagens
+ terão uma apresentação melhor, principalmente quando impressas, uma vez
+ que imagens vetorias são perfeitamente escaláveis para qualquer dimensão.
+ Nesse caso, se for utilizar o Microsoft Excel para produzir gráficos, ou
+ o Microsoft Word para produzir ilustrações, exporte-os como PDF e os incorpore
+ ao documento conforme o exemplo abaixo.
+ No entanto, para manter a coerência no uso de software livre (já que você
+ está usando 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+LaTeX
+\end_layout
+
+\end_inset
+
+ e 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+abnTeX
+\end_layout
+
+\end_inset
+
+), teste a ferramenta 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+textsf{InkScape}
+\end_layout
+
+\end_inset
+
+ (
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+http://inkscape.org/
+\end_layout
+
+\end_inset
+
+).
+ Ela é uma excelente opção de código-livre para produzir ilustrações vetoriais,
+ similar ao CorelDraw ou ao Adobe Illustrator.
+ De todo modo, caso não seja possível utilizar arquivos de imagens como
+ PDF, utilize qualquer outro formato, como JPEG, GIF, BMP, etc.
+ Nesse caso, você pode tentar aprimorar as imagens incorporadas com o software
+ livre 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+textsf{Gimp}
+\end_layout
+
+\end_inset
+
+ (
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+http://www.gimp.org/
+\end_layout
+
+\end_inset
+
+).
+ Ele é uma alternativa livre ao Adobe Photoshop.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement tbh
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Gráfico produzido em Excel e salvo como PDF.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig_grafico"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figuras/abntex2-modelo-img-grafico.pdf
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+legend{Fonte: 
+\backslash
+citeonline[p.
+ 24]{araujo2012}}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Figuras em 
+\emph on
+minipages
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Minipages
+\emph default
+ são usadas para inserir textos ou outros elementos em quadros com tamanhos
+ e posições controladas.
+ Veja o exemplo da Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig_minipage_imagem1"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ e da Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig_minipage_grafico2"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement tbh
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "40text%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Imagem 1 da minipage.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig_minipage_imagem1"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename figuras/abntex2-modelo-img-marca.pdf
+	scale 90
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+legend{Fonte: Produzido pelos autores}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+hfill
+\end_layout
+
+\end_inset
+
+
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "40text%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Gráfico da minipage.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig_minipage_grafico2"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename figuras/abntex2-modelo-img-grafico.pdf
+	scale 20
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+legend{Fonte: 
+\backslash
+citeonline[p.
+ 24]{araujo2012}}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Observe que, segundo a 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+citeonline[seções 4.2.1.10 e 5.8]{NBR14724:2011}
+\end_layout
+
+\end_inset
+
+, as ilustrações devem sempre ter numeração contínua e única em todo o documento
+:
+\end_layout
+
+\begin_layout Citacao direta
+Qualquer que seja o tipo de ilustração, sua identificação aparece na parte
+ superior, precedida da palavra designativa (desenho, esquema, fluxograma,
+ fotografia, gráfico, mapa, organograma, planta, quadro, retrato, figura,
+ imagem, entre outros), seguida de seu número de ordem de ocorrência no
+ texto, em algarismos arábicos, travessão e do respectivo título.
+ Após a ilustração, na parte inferior, indicar a fonte consultada (elemento
+ obrigatório, mesmo que seja produção do próprio autor), legenda, notas
+ e outras informações necessárias à sua compreensão (se houver).
+ A ilustração deve ser citada no texto e inserida o mais próximo possível
+ do trecho a que se refere.
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+ 
+\backslash
+cite[seções 5.8]{NBR14724:2011}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Expressões matemáticas
+\end_layout
+
+\begin_layout Standard
+Use o ambiente
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+ 
+\backslash
+texttt{equation}
+\end_layout
+
+\end_inset
+
+ para escrever expressões matemáticas numeradas:
+\begin_inset Formula 
+\begin{equation}
+\forall x\in X,\quad\exists\:y\leq\epsilon
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Escreva expressões matemáticas entre 
+\begin_inset Formula $\$$
+\end_inset
+
+ e 
+\begin_inset Formula $\$$
+\end_inset
+
+, como em 
+\begin_inset Formula $\lim_{x\to\infty}\exp(-x)=0$
+\end_inset
+
+, para que fiquem na mesma linha.
+\end_layout
+
+\begin_layout Standard
+Também é possível usar colchetes para indicar o início de uma expressão
+ matemática que não é numerada.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left|\sum_{\{i=1)}^{n}a_{i}b_{i}\right|\le\left(\sum_{\{i=1)}^{n}a_{i}^{2}\right){}^{\frac{1}{2}}\left(\sum_{\{i=1)}^{n}b_{i}^{2}\right){}^{\frac{1}{2}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Consulte mais informações sobre expressões matemáticas em 
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+https://github.com/abntex/abntex2/wiki/Referencias
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+Enumerações: alíneas e subalíneas
+\end_layout
+
+\begin_layout Standard
+Quando for necessário enumerar os diversos assuntos de uma seção que não
+ possua título, esta deve ser subdividida em alíneas 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "NBR6024:2012"
+literal "false"
+
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Itemize
+os diversos assuntos que não possuam título próprio, dentro de uma mesma
+ seção, devem ser subdivididos em alíneas;
+\end_layout
+
+\begin_layout Itemize
+o texto que antecede as alíneas termina em dois pontos; 
+\backslash
+item as alíneas devem ser indicadas alfabeticamente, em letra minúscula,
+ seguida de parêntese.
+ Utilizam-se letras dobradas, quando esgotadas as letras do alfabeto;
+\end_layout
+
+\begin_layout Itemize
+as letras indicativas das alíneas devem apresentar recuo em relação à margem
+ esquerda;
+\end_layout
+
+\begin_layout Itemize
+o texto da alínea deve começar por letra minúscula e terminar em ponto-e-vírgula
+, exceto a última alínea que termina em ponto final;
+\end_layout
+
+\begin_layout Itemize
+o texto da alínea deve terminar em dois pontos, se houver subalínea;
+\end_layout
+
+\begin_layout Itemize
+a segunda e as seguintes linhas do texto da alínea começa sob a primeira
+ letra do texto da própria alínea;
+\end_layout
+
+\begin_layout Itemize
+subalíneas 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "NBR6024:2012"
+literal "false"
+
+\end_inset
+
+ devem ser conforme as alíneas a seguir: 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+as subalíneas devem começar por travessão seguido de espaço;
+\end_layout
+
+\begin_layout Itemize
+as subalíneas devem apresentar recuo em relação à alínea;
+\end_layout
+
+\begin_layout Itemize
+o texto da subalínea deve começar por letra minúscula e terminar em ponto-e-vírg
+ula.
+ A última subalínea deve terminar em ponto final, se não houver alínea subsequen
+te;
+\end_layout
+
+\begin_layout Itemize
+a segunda e as seguintes linhas do texto da subalínea começam sob a primeira
+ letra do texto da própria subalínea.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+no 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+abnTeX
+\end_layout
+
+\end_inset
+
+ estão disponíveis os ambientes 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+texttt{incisos}
+\end_layout
+
+\end_inset
+
+ e 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+texttt{subalineas}
+\end_layout
+
+\end_inset
+
+, que em suma são o mesmo que se criar outro nível de 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+texttt{alineas}
+\end_layout
+
+\end_inset
+
+, como nos exemplos à seguir:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\shape italic
+Um novo inciso em itálico;
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Alínea em 
+\series bold
+negrito:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\shape italic
+\bar under
+Uma subalínea em itálico;
+\end_layout
+
+\begin_layout Itemize
+
+\shape italic
+Uma subalínea em itálico e sublinhado;
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Última alínea com 
+\emph on
+ênfase.
+\end_layout
+
+\begin_layout Section
+Espaçamento entre parágrafos e linhas
+\end_layout
+
+\begin_layout Standard
+O tamanho do parágrafo, espaço entre a margem e o início da frase do parágrafo,
+ é definido por: 
+\end_layout
+
+\begin_layout Verbatim
+
+
+\backslash
+setlength{
+\backslash
+parindent}{1.3cm}
+\end_layout
+
+\begin_layout Standard
+Por padrão, não há espaçamento no primeiro parágrafo de cada início de divisão
+ do documento (seção 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec-divisoes"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
+ Porém, você pode definir que o primeiro parágrafo também seja indentado,
+ como é o caso deste documento.
+ Para isso, apenas inclua o pacote 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+textsf{indentfirst}
+\end_layout
+
+\end_inset
+
+ no preâmbulo do documento:
+\end_layout
+
+\begin_layout Verbatim
+
+
+\backslash
+usepackage{indentfirst}      % Indenta o primeiro parágrafo de cada seção.
+\end_layout
+
+\begin_layout Standard
+O espaçamento entre um parágrafo e outro pode ser controlado por meio do
+ comando:
+\end_layout
+
+\begin_layout Verbatim
+
+
+\backslash
+setlength{
+\backslash
+parskip}{0.2cm}  % tente também 
+\backslash
+onelineskip
+\end_layout
+
+\begin_layout Standard
+O controle do espaçamento entre linhas é definido por:
+\end_layout
+
+\begin_layout Verbatim
+
+
+\backslash
+OnehalfSpacing       % espaçamento um e meio (padrão);
+\end_layout
+
+\begin_layout Verbatim
+
+
+\backslash
+DoubleSpacing        % espaçamento duplo   
+\end_layout
+
+\begin_layout Verbatim
+
+
+\backslash
+SingleSpacing        % espaçamento simples
+\end_layout
+
+\begin_layout Standard
+Para isso, também estão disponíveis os ambientes:
+\end_layout
+
+\begin_layout Verbatim
+
+
+\backslash
+begin{SingleSpace} ...
+\backslash
+end{SingleSpace}   
+\end_layout
+
+\begin_layout Verbatim
+
+
+\backslash
+begin{Spacing}{hfactori} ...
+ 
+\backslash
+end{Spacing}   
+\end_layout
+
+\begin_layout Verbatim
+
+
+\backslash
+begin{OnehalfSpace} ...
+ 
+\backslash
+end{OnehalfSpace}   
+\end_layout
+
+\begin_layout Verbatim
+
+
+\backslash
+begin{OnehalfSpace*} ...
+ 
+\backslash
+end{OnehalfSpace*}   
+\end_layout
+
+\begin_layout Verbatim
+
+
+\backslash
+begin{DoubleSpace} ...
+ 
+\backslash
+end{DoubleSpace}   
+\end_layout
+
+\begin_layout Verbatim
+
+
+\backslash
+begin{DoubleSpace*} ...
+ 
+\backslash
+end{DoubleSpace*}
+\end_layout
+
+\begin_layout Standard
+Para mais informações, consulte 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+citeonline[p.
+ 47-52 e 135]{memoir}
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+Inclusão de outros arquivos
+\begin_inset CommandInset label
+LatexCommand label
+name "sec-include"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+É uma boa prática dividir o seu documento em diversos arquivos, e não apenas
+ escrever tudo em um único.
+ Esse recurso foi utilizado neste documento.
+ Para incluir diferentes arquivos em um arquivo principal, de modo que cada
+ arquivo incluído fique em uma página diferente, utilize o comando:
+\end_layout
+
+\begin_layout Verbatim
+
+
+\backslash
+include{documento-a-ser-incluido}      % sem a extensão .tex
+\end_layout
+
+\begin_layout Standard
+Para incluir documentos sem quebra de páginas, utilize:
+\end_layout
+
+\begin_layout Verbatim
+
+
+\backslash
+input{documento-a-ser-incluido}      % sem a extensão .tex
+\end_layout
+
+\begin_layout Section
+Compilar o documento 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+LateX
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Geralmente os editores 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+LaTeX
+\end_layout
+
+\end_inset
+
+, como o TeXlipse
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+http://texlipse.sourceforge.net/
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+, o Texmaker
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+http://www.xm1math.net/texmaker/
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+, entre outros, compilam os documentos automaticamente, de modo que você
+ não precisa se preocupar com isso.
+\end_layout
+
+\begin_layout Standard
+No entanto, você pode compilar os documentos 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+LaTeX
+\end_layout
+
+\end_inset
+
+ usando os seguintes comandos, que devem ser digitados no 
+\emph on
+Prompt de Comandos
+\emph default
+ do Windows ou no 
+\emph on
+Terminal
+\emph default
+ do Mac ou do Linux:
+\end_layout
+
+\begin_layout Verbatim
+
+pdflatex ARQUIVO_PRINCIPAL.tex    
+\end_layout
+
+\begin_layout Verbatim
+
+bibtex ARQUIVO_PRINCIPAL.aux    
+\end_layout
+
+\begin_layout Verbatim
+
+makeindex ARQUIVO_PRINCIPAL.idx    
+\end_layout
+
+\begin_layout Verbatim
+
+makeindex ARQUIVO_PRINCIPAL.nlo -s 
+\end_layout
+
+\begin_layout Verbatim
+
+nomencl.ist -o ARQUIVO_PRINCIPAL.nls    
+\end_layout
+
+\begin_layout Verbatim
+
+pdflatex ARQUIVO_PRINCIPAL.tex    
+\end_layout
+
+\begin_layout Verbatim
+
+pdflatex ARQUIVO_PRINCIPAL.tex
+\end_layout
+
+\begin_layout Section
+Remissões internas
+\end_layout
+
+\begin_layout Standard
+Ao nomear a 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab-nivinv"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ e a 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig_circulo"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, apresentamos um exemplo de remissão interna, que também pode ser feita
+ quando indicamos o Capítulo 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:cap_exemplos"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, que tem o nome 
+\emph on
+Resultados de comandos
+\emph default
+.
+ O número do capítulo indicado é 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:cap_exemplos"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, que se inicia à 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+autopageref{cap_exemplos}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+O número da página de uma remissão pode ser obtida também assim: 
+\backslash
+pageref{cap_exemplos}.
+\end_layout
+
+\end_inset
+
+.
+ Veja a seção 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec-divisoes"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ para outros exemplos de remissões internas entre seções, subseções e subsubseçõ
+es.
+\end_layout
+
+\begin_layout Standard
+O código usado para produzir o texto desta seção é: 
+\end_layout
+
+\begin_layout Verbatim
+
+Ao nomear a 
+\backslash
+autoref{tab-nivinv} e a 
+\backslash
+autoref{fig_circulo}, apresentamos um 
+\end_layout
+
+\begin_layout Verbatim
+
+exemplo de remissão interna, que também pode ser feita quando indicamos
+ o 
+\end_layout
+
+\begin_layout Verbatim
+
+
+\backslash
+autoref{cap_exemplos}, que tem o nome 
+\backslash
+emph{
+\backslash
+nameref{cap_exemplos}}.
+ O número 
+\end_layout
+
+\begin_layout Verbatim
+
+do capítulo indicado é 
+\backslash
+ref{cap_exemplos}, que se inicia à 
+\end_layout
+
+\begin_layout Verbatim
+
+
+\backslash
+autopageref{cap_exemplos}
+\backslash
+footnote{O número da página de uma remissão pode ser 
+\end_layout
+
+\begin_layout Verbatim
+
+obtida também assim: 
+\end_layout
+
+\begin_layout Verbatim
+
+
+\backslash
+pageref{cap_exemplos}.}.
+ 
+\end_layout
+
+\begin_layout Verbatim
+
+Veja a 
+\backslash
+autoref{sec-divisoes} para outros exemplos de remissões internas entre 
+\end_layout
+
+\begin_layout Verbatim
+
+seções, subseções e subsubseções.
+\end_layout
+
+\begin_layout Section
+Divisões do documento: seção
+\begin_inset CommandInset label
+LatexCommand label
+name "sec-divisoes"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Esta seção testa o uso de divisões de documentos.
+ Esta é a seção 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec-divisoes"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Veja a subseção .
+\end_layout
+
+\begin_layout Subsection
+Divisões do documento: subseção
+\begin_inset CommandInset label
+LatexCommand label
+name "sec-divisoes-subsection"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Isto é uma subseção.
+ Veja a subseção 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec-divisoes-subsubsection"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, que é uma 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+texttt{subsubsection}
+\end_layout
+
+\end_inset
+
+ do 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+LaTeX
+\end_layout
+
+\end_inset
+
+, mas é impressa chamada de 
+\begin_inset Quotes eld
+\end_inset
+
+subseção
+\begin_inset Quotes erd
+\end_inset
+
+ porque no Português não temos a palavra 
+\begin_inset Quotes eld
+\end_inset
+
+subsubseção
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection
+Divisões do documento: subsubseção
+\begin_inset CommandInset label
+LatexCommand label
+name "sec-divisoes-subsubsection"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Isto é uma subsubseção.
+\end_layout
+
+\begin_layout Subsubsection
+Divisões do documento: subsubseção
+\end_layout
+
+\begin_layout Standard
+Isto é outra subsubseção.
+\end_layout
+
+\begin_layout Subsection
+Divisões do documento: subseção
+\begin_inset CommandInset label
+LatexCommand label
+name "sec-exemplo-subsec"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Isto é uma subseção.
+\end_layout
+
+\begin_layout Subsubsection
+Divisões do documento: subsubseção
+\end_layout
+
+\begin_layout Standard
+Isto é mais uma subsubseção da subseção 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec-divisoes-subsubsection"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+subsubsubsection{Esta é uma subseção de quinto nível}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Esta é uma seção de quinto nível.
+ Ela é produzida com o seguinte comando:
+\end_layout
+
+\begin_layout Verbatim
+
+
+\backslash
+subsubsubsection{Esta é uma subseção de quinto 
+\end_layout
+
+\begin_layout Verbatim
+
+nível}
+\backslash
+label{sec-exemplo-subsubsubsection}
+\end_layout
+
+\begin_layout Paragraph
+Este é um parágrafo numerado
+\begin_inset CommandInset label
+LatexCommand label
+name "sec-exemplo-paragrafo"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Este é um exemplo de parágrafo nomeado.
+ Ele é produzida com o comando de parágrafo:
+\end_layout
+
+\begin_layout Verbatim
+
+
+\backslash
+paragraph{Este é um parágrafo nomeado}
+\backslash
+label{sec-exemplo-paragrafo}
+\end_layout
+
+\begin_layout Standard
+A numeração entre parágrafos numeradaos e subsubsubseções são contínuas.
+\end_layout
+
+\begin_layout Paragraph
+Esta é outro parágrafo numerado
+\begin_inset CommandInset label
+LatexCommand label
+name "sec-exemplo-paragrafo-outro"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Esta é outro parágrafo nomeado.
+\end_layout
+
+\begin_layout Section
+Este é um exemplo de nome de seção longo.
+ Ele deve estar alinhado à esquerda e a segunda e demais linhas devem iniciar
+ logo abaixo da primeira palavra da primeira linha
+\end_layout
+
+\begin_layout Standard
+Isso atende à norma 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+citeonline[seções de 5.2.2 a 5.2.4]{NBR14724:2011}
+\end_layout
+
+\end_inset
+
+ e 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+citeonline[seções de 3.1 a 3.8]{NBR6024:2012}
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+Diferentes idiomas e hifenizações
+\begin_inset CommandInset label
+LatexCommand label
+name "sec-hifenizacao"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Para usar hifenizações de diferentes idiomas, inclua nas opções do documento
+ o nome dos idiomas que o seu texto contém.
+ Por exemplo (para melhor visualização, as opções foram quebras em diferentes
+ linhas):
+\end_layout
+
+\begin_layout Verbatim
+
+
+\backslash
+documentclass[
+\end_layout
+
+\begin_layout Verbatim
+
+	12pt,
+\end_layout
+
+\begin_layout Verbatim
+
+	openright,
+\end_layout
+
+\begin_layout Verbatim
+
+	twoside,
+\end_layout
+
+\begin_layout Verbatim
+
+	a4paper,
+\end_layout
+
+\begin_layout Verbatim
+
+	english,
+\end_layout
+
+\begin_layout Verbatim
+
+	french,
+\end_layout
+
+\begin_layout Verbatim
+
+	spanish,
+\end_layout
+
+\begin_layout Verbatim
+
+	brazil
+\end_layout
+
+\begin_layout Verbatim
+
+	]{abntex2}
+\end_layout
+
+\begin_layout Verbatim
+
+\end_layout
+
+\begin_layout Standard
+O idioma português-brasileiro (
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+texttt{brazil}
+\end_layout
+
+\end_inset
+
+) é incluído automaticamente pela classe 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+textsf{abntex2}
+\end_layout
+
+\end_inset
+
+.
+ Porém, mesmo assim a opção 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+texttt{brazil}
+\end_layout
+
+\end_inset
+
+ deve ser informada como a última opção da classe para que todos os pacotes
+ reconheçam o idioma.
+ Vale ressaltar que a última opção de idioma é a utilizada por padrão no
+ documento.
+ Desse modo, caso deseje escrever um texto em inglês que tenha citações
+ em português e em francês, você deveria usar o preâmbulo como abaixo:
+\end_layout
+
+\begin_layout Verbatim
+
+
+\backslash
+documentclass[
+\end_layout
+
+\begin_layout Verbatim
+
+	12pt,
+\end_layout
+
+\begin_layout Verbatim
+
+	openright,
+\end_layout
+
+\begin_layout Verbatim
+
+	twoside,
+\end_layout
+
+\begin_layout Verbatim
+
+	a4paper,
+\end_layout
+
+\begin_layout Verbatim
+
+	french,
+\end_layout
+
+\begin_layout Verbatim
+
+	english
+\end_layout
+
+\begin_layout Verbatim
+
+	]{abntex2}
+\end_layout
+
+\begin_layout Standard
+A lista completa de idiomas suportados, bem como outras opções de hifenização,
+ estão disponíveis em 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+citeonline[p.~5-6]{babel}
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Exemplo de hifenização em inglês
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Extraído de: 
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+http://en.wikibooks.org/wiki/LaTeX/Internationalization
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+
+\shape italic
+\lang english
+Text in English language.
+ This environment switches all language-related definitions, like the language
+ specific names for figures, tables etc.
+ to the other language.
+ The starred version of this environment typesets the main text according
+ to the rules of the other language, but keeps the language specific string
+ for ancillary things like figures, in the main language of the document.
+ The environment hyphenrules switches only the hyphenation patterns used;
+ it can also be used to disallow hyphenation by using the language name
+ `nohyphenation'.
+\end_layout
+
+\begin_layout Standard
+Exemplo de hifenização em francês
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Extraído de: 
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+http://bigbrowser.blog.lemonde.fr/2013/02/17/tu-ne-tweeteras-point-le-vatican-inter
+dit-aux-cardinaux-de-tweeter-pendant-le-conclave/
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+
+\shape italic
+\lang french
+Texte en français.
+ Pas question que Twitter ne vienne faire une concurrence déloyale à la
+ traditionnelle fumée blanche qui marque l'élection d'un nouveau pape.
+ Pour éviter toute fuite précoce, le Vatican a donc pris un peu d'avance,
+ et a déjà interdit aux cardinaux qui prendront part au vote d'utiliser
+ le réseau social, selon Catholic News Service.
+ Une mesure valable surtout pour les neuf cardinaux – sur les 117 du conclave
+ – pratiquants très actifs de Twitter, qui auront interdiction pendant toute
+ la période de se connecter à leur compte.
+\end_layout
+
+\begin_layout Standard
+Pequeno texto em espanhol
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Extraído de: 
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+http://internacional.elpais.com/internacional/2013/02/17/actualidad/1361102009_913
+423.html
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+
+\shape italic
+\lang spanish
+Decenas de miles de personas ovacionan al pontífice en su penúltimo ángelus
+ dominical, el primero desde que anunciase su renuncia.
+ El Papa se centra en la crítica al materialismo.
+\end_layout
+
+\begin_layout Standard
+
+\lang spanish
+O idioma geral do texto por ser alterado como no exemplo seguinte:
+\end_layout
+
+\begin_layout Verbatim
+
+
+\backslash
+selectlanguage{english}
+\end_layout
+
+\begin_layout Standard
+
+Isso altera automaticamente a hifenização e todos os nomes constantes de
+ referências do documento para o idioma inglês.
+ Consulte o manual da classe 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "abntex2classe"
+literal "false"
+
+\end_inset
+
+ para obter orientações adicionais sobre internacionalização de documentos
+ produzidos com 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+abnTeX
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+A seção 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec-citacao"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ descreve o ambiente 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+texttt{citacao}
+\end_layout
+
+\end_inset
+
+ que pode receber como parâmetro um idioma a ser usado na citação.
+\end_layout
+
+\begin_layout Section
+
+Consulte o manual da classe 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+textsf{abntex2}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+Consulte o manual da classe 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+textsf{abntex2}
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "abntex2classe"
+literal "false"
+
+\end_inset
+
+ para uma referência completa das macros e ambientes disponíveis.
+\end_layout
+
+\begin_layout Standard
+
+Além disso, o manual possui informações adicionais sobre as normas ABNT
+ observadas pelo 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+abnTeX
+\end_layout
+
+\end_inset
+
+ e considerações sobre eventuais requisitos específicos não atendidos, como
+ o caso da 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+citeonline[seção 5.2.2]{NBR14724:2011}
+\end_layout
+
+\end_inset
+
+, que especifica o espaçamento entre os capítulos e o início do texto, regra
+ propositalmente não atendida pelo presente modelo.
+\end_layout
+
+\begin_layout Section
+
+Referências bibliográficas
+\end_layout
+
+\begin_layout Standard
+
+A formatação das referências bibliográficas conforme as regras da ABNT são
+ um dos principais objetivos do 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+abnTeX
+\end_layout
+
+\end_inset
+
+.
+ Consulte os manuais 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+citeonline{abntex2cite}
+\end_layout
+
+\end_inset
+
+ e 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+citeonline{abntex2cite-alf}
+\end_layout
+
+\end_inset
+
+ para obter informações sobre como utilizar as referências bibliográficas.
+\end_layout
+
+\begin_layout Section
+
+Acentuação de referências bibliográficas
+\end_layout
+
+\begin_layout Standard
+
+Normalmente não há problemas em usar caracteres acentuados em arquivos bibliográ
+ficos (
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+texttt{*.bib}
+\end_layout
+
+\end_inset
+
+).
+ Porém, como as regras da ABNT fazem uso quase abusivo da conversão para
+ letras maiúsculas, é preciso observar o modo como se escreve os nomes dos
+ autores.
+ Na Tabela 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tabela-acentos"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ você encontra alguns exemplos das conversões mais importantes.
+ Preste atenção especial para `ç' e `í' que devem estar envoltos em chaves.
+ A regra geral é sempre usar a acentuação neste modo quando houver conversão
+ para letras maiúsculas.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Comment
+status collapsed
+
+\begin_layout Plain Layout
+[Tabela levemente diferente do modelo]
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Float table
+placement tbph
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Tabela de conversão de acentuação.
+\begin_inset CommandInset label
+LatexCommand label
+name "tabela-acentos"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="2">
+<features booktabs="true" tabularvalignment="middle">
+<column alignment="left" valignment="top" width="0pt">
+<column alignment="left" valignment="top" width="0pt">
+<row>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+acento
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+textsf{bibtex}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+à á ã
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb+
+\backslash
+`a+ 
+\backslash
+verb+
+\backslash
+'a+ 
+\backslash
+verb+
+\backslash
+~a+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+í
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb+{
+\backslash
+'
+\backslash
+i}+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+ç
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb+{
+\backslash
+c c}+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{table}[htbp] 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+caption{Tabela de conversão de acentuação.} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+label{tabela-acentos}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{center} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tabular}{ll}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+hline
+\backslash
+hline
+\end_layout
+
+\begin_layout Plain Layout
+
+acento & 
+\backslash
+textsf{bibtex}
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+à á ã & 
+\backslash
+verb+
+\backslash
+`a+ 
+\backslash
+verb+
+\backslash
+'a+ 
+\backslash
+verb+
+\backslash
+~a+
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+í & 
+\backslash
+verb+{
+\backslash
+'
+\backslash
+i}+
+\backslash
+
+\backslash
+ ç & 
+\backslash
+verb+{
+\backslash
+c c}+
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+hline
+\backslash
+hline 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tabular} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{center} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{table}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Precisa de ajuda?
+\end_layout
+
+\begin_layout Standard
+Consulte a FAQ com perguntas frequentes e comuns no portal do 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+abnTeX
+\end_layout
+
+\end_inset
+
+: 
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+https://github.com/abntex/abntex2/wiki/FAQ
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Inscreva-se no grupo de usuários 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+LaTeX
+\end_layout
+
+\end_inset
+
+: 
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+http://groups.google.com/group/latex-br
+\end_layout
+
+\end_inset
+
+, tire suas dúvidas e ajude outros usuários.
+\end_layout
+
+\begin_layout Standard
+Participe também do grupo de desenvolvedores do 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+abnTeX
+\end_layout
+
+\end_inset
+
+: 
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+http://groups.google.com/group/abntex2
+\end_layout
+
+\end_inset
+
+ e faça sua contribuição à ferramenta.
+\end_layout
+
+\begin_layout Section
+Você pode ajudar?
+\end_layout
+
+\begin_layout Standard
+Sua contribuição é muito importante! Você pode ajudar na divulgação, no
+ desenvolvimento e de várias outras formas.
+ Veja como contribuir com o 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+abnTeX
+\backslash
+
+\end_layout
+
+\end_inset
+
+ em 
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+https://github.com/abntex/abntex2/wiki/Como-Contribuir
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+Quer customizar os modelos do 
+\backslash
+abnTeX
+\backslash
+ para sua instituição ou universidade?
+\end_layout
+
+\begin_layout Standard
+Veja como customizar o 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+abnTeX
+\backslash
+
+\end_layout
+
+\end_inset
+
+ em: 
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+https://github.com/abntex/abntex2/wiki/ComoCustomizar
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\end_body
+\end_document
